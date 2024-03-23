@@ -2,7 +2,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
     name: argocd
-    namespace: argocd
+    namespace: argocd-cicd
 spec:
     project: default
     source:
@@ -11,7 +11,7 @@ spec:
         targetRevision: main
     destination: 
         server: 'https://kubernetes.default.svc'
-        namespace: argocd
+        namespace: aargocd-cicd
     syncPolicy:
       automated:
         selfHeal: true
