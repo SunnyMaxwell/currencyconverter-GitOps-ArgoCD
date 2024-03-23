@@ -7,7 +7,7 @@ spec:
     project: default
     source:
         repoURL: 'https://github.com/SunnyMaxwell/currencyconverter-GitOps-ArgoCD.git'
-        path: argo-cd
+        path: argocd
         targetRevision: main
     destination: 
         server: 'https://kubernetes.default.svc'
