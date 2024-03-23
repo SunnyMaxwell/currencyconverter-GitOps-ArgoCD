@@ -7,7 +7,7 @@ spec:
     project: default
     source:
         repoURL: 'https://github.com/SunnyMaxwell/currencyconverter-GitOps-ArgoCD.git'
-        path:  k8s/overlays/production
+        path: k8s/overlays/production
         targetRevision: main
     destination: 
         server: 'https://kubernetes.default.svc'
